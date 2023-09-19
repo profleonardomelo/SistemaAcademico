@@ -13,3 +13,6 @@ class Matricula(models.Model):
         verbose_name_plural = 'Matrículas de Aluno'
         #ordering = ['nome_aluno']
         ordering = ['aluno']
+
+    def __str__(self):
+        return '{} {}'.format(self.aluno.user.first_name, self.aluno.user.last_name)
