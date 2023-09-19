@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+{% include 'partials/_preloader.html' %}
+{% include 'partials/_buscar.html' %}
+{% include 'partials/_header.html' %}
+
+<!-- CONTEUDO -->
+<section class="best-acad-area">
+    <div class="container">
+        {{ matricula.matricula }} <br/>
+        {{ matricula.nome_aluno }} <br/>
+        {{ matricula.curso }} <br/>
+        <span>{{ data_acesso | date:"d/m/Y H:m:s" }}</span>
+    </div>
+</section>
+
+{% include 'partials/_footer.html' %}
+
+{% endblock %}
+
