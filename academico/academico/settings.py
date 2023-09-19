@@ -57,7 +57,7 @@ ROOT_URLCONF = 'academico.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'edu/templates')], #Modificado
+        'DIRS': [os.path.join(BASE_DIR, 'templates')], #Modificado
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
